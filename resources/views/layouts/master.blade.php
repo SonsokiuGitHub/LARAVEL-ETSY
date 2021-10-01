@@ -15,7 +15,7 @@
     <div id="wrapper" class="container-fluid g-0">
         <header id="header" class="header">
             <div class="header__logo">
-                <a href="" class="header__logo--link text-decoration-none">
+                <a href="{{route('home')}}" class="header__logo--link text-decoration-none">
                     <span class="">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" aria-hidden="true"
                             focusable="false">

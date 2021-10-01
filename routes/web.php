@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontEnd\HomeController;
 use App\Http\Controllers\FrontEnd\CategoryController;
 use App\Http\Controllers\FrontEnd\SearchController;
-use App\Http\Controllers\FrontEnd\DetailProductController;
+use App\Http\Controllers\FrontEnd\ProductDetailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +22,7 @@ Route::get('/search', [SearchController::class, 'index'])->name('search');
 
 Route::get('/category', [CategoryController::class, 'index'])->name('category');
 
-Route::get('/detail-product', [DetailProductController::class, 'index'])->name('detail-product');
+Route::get('/detail-product', [ProductDetailController::class, 'index'])->name('detail-product');
 
 
 
