@@ -1,0 +1,28 @@
+$color__logo : #f1641e;
+$color__text-main:#222222;
+$color__text-sub : #258635;
+$color__text-primary : #ffffff;
+
+$bg-banner-home: #DDEBE3;
+$bg-box-introduce: #fdebd2; 
+$bg-best-seller: #FDEBD2;
+$bg-free-shipping: #D4E9D7;
+$bg-form-error-message: #FDDCD8;
+$bg-color-form-sign-in: #ffffff;
+$box-shadow-product-hover : 0 0 8px 1px rgba(34, 34, 34, 0.3);
+
+$border-color-form-error: rgba(166, 26, 46, 0.35);
+
+$font-family-main: "Graphik-Light","-apple-system","Helvetica Neue","Droid Sans","Arial,sans-serif";
+$font-family-sub: "Graphik-Regular","-apple-system","Helvetica Neue","Droid Sans","Arial,sans-serif";
+
+@keyframes effect-show-box-sort-filter{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

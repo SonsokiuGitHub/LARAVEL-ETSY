@@ -1,0 +1,105 @@
+.box-breadcrumb{
+    display:flex;
+    align-items: center;
+    line-height: 0;
+    flex-wrap: wrap;
+    .breadcrumb-list{
+        display:flex;
+        align-items: center;
+        margin-right:6px;
+        margin-bottom:4px;
+        float: left;
+        .box-breadcrumb-item{
+            display:flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            .breadcrumb-item__name{
+                a{
+                    color:#222222;
+                    span{
+                        font-size:14px;
+                        font-family: "GraphikRegular";
+                    }
+                }
+            }
+            .breadcrumb-item__icon{
+                svg{
+                    width:18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    .breadcrumb-describe{
+        display:flex;
+        align-items: center;
+        font-family: "GraphikRegular";
+        font-size:13px;
+        line-height: 1;
+        .breadcrumb-infor{
+            display:flex;
+            align-items: center;
+            .breadcrumb-describe__detail{
+                position: relative;
+                &-btn{
+                    display:flex;
+                    align-items: center;
+                    background-color: transparent;
+                    cursor: help;
+                    span{
+                        svg{
+                            width:18px;
+                            height:18px;
+                        }
+                    }
+                    &::before{
+                        position:absolute;
+                        content:"";
+                        top:100%;
+                        left:-20px;
+                        width:50px;
+                        height: 25px;
+                        background-color:transparent;
+                    }
+                }
+                &-btn:hover ~ #infor-detail{
+                    display:block;
+                }
+                #infor-detail{
+                    display:none;
+                    position:absolute;
+                    top:calc(100% + 15px);
+                    left:-143px;
+                    height: auto;
+                    border:1px solid rgba(34,34,34, 0.15);
+                    border-radius: 12px;
+                    box-shadow: 0 6px 36px rgba(34, 34,34,  0.33);
+                    background: #FFFFFF;
+                    color: #222222;
+                    padding: 12px;
+                    width: 300px;
+                    @include text__title(13);
+                    font-weight: 500;
+                    letter-spacing:0.3px;
+                    >a{
+                        color: #222222;
+                        text-align: center;
+                    }
+                    &:hover{
+                        display: block;
+                    }
+                    &::after{
+                        position:absolute;
+                        content:"";
+                        border:8px solid #fff;
+                        top:-8px;
+                        left:48%;
+                        transform:rotate(45deg);
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+}
