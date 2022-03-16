@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class SearchController extends Controller
 {
     public function index(){
-        return view('frontent.search');
+        return view('pages.search');
     }
 }

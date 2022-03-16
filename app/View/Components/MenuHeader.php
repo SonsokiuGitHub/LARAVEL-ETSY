@@ -22,7 +22,8 @@ class MenuHeader extends Component
      * @return \Illuminate\Contracts\View\View|\Closure|string
      */
     public function render()
-    {
-        return view('components.menu-header');
+    {   
+        $menuMain = config('menu');
+        return view('components.menu-header', compact('menuMain'));
     }
 }

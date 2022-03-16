@@ -5,6 +5,7 @@ use App\Http\Controllers\FrontEnd\HomeController;
 use App\Http\Controllers\FrontEnd\CategoryController;
 use App\Http\Controllers\FrontEnd\SearchController;
 use App\Http\Controllers\FrontEnd\ProductDetailController;
+use App\Http\Controllers\Login\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,8 +23,10 @@ Route::get('/search', [SearchController::class, 'index'])->name('search');
 
 Route::get('/category', [CategoryController::class, 'index'])->name('category');
 
-Route::get('/detail-product', [ProductDetailController::class, 'index'])->name('detail-product');
+Route::get('/product-detail', [ProductDetailController::class, 'index'])->name('detail-product');
 
+Route::get('/signin', [LoginController::class, 'signin'])->name('signin');
 
+Route::get('/register', [LoginController::class, 'register'])->name('register');
 
 
